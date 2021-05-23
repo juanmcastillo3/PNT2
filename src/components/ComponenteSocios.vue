@@ -1,8 +1,22 @@
 <template>
   <div class="Socios">
-      
     <h1>{{ msg1 }}</h1>
+    <form action=""> 
+      <input type="text" v-model="Nombre">
+      <input type="text" v-model="Apellico">
+      <input type="text" v-model="Telefono">
+      <input type="text" v-model="dni">
+      <button @click="agregarSocio">Agregar</button>
+    </form>
+    <li v-for="(socio,index) in socios" :key="index">
+      {{socio.name}}
+      {{socio.surname}}
+      {{socio.phone}}
+      {{socio.document}}
+    </li>
+
   </div>
+
 </template>
 
 <script>
@@ -10,8 +24,29 @@ export default {
   name: 'Socios',
   props: {
     msg1: String
-  }
-}
+  },
+  data: function(){
+    return{
+      socios:[],
+      Nombre:'',
+      Apellido:'',
+      Telefono: '',
+      dni: '',
+    }
+  },
+  methods:{
+    agregarSocio: function(){
+    this.socios.push({
+      name: this.Nombre,
+      surname: this.Apellido,
+      phone: this.Telefono,
+      document: this.dni,
+    })
+    console.log(this.socios);
+    }
+  },
+    }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

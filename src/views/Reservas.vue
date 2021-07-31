@@ -1,6 +1,7 @@
 <template>
   <div class="Reservas">
 <ComponenteReservas msg3="Lista de Reservas"/>
+
   </div>
 </template>
 

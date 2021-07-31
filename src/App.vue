@@ -1,22 +1,19 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/Socios">Socios</router-link> |
-      <router-link to="/Canchas">Canchas</router-link> |
+      <router-link to="/">Home</router-link>
+      <router-link to="/Socios">Socios</router-link>
+      <router-link to="/Canchas">Canchas</router-link>
       <router-link to="/Reservas">Reservas</router-link>
       <router-view/>
     </div>
   </div>
+  
 </template>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  color: #050505;
 }
 
 #nav {
@@ -24,11 +21,9 @@
 }
 
 #nav a {
-  font-weight: bold;
   color: #2c3e50;
+  padding-inline: 10px;
+  text-decoration: none;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>

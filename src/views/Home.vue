@@ -1,6 +1,7 @@
 <template>
   <div class="home">
-    <HelloWorld msg="Reservas"/>
+     <HelloWorld msg="Bienvenid@s"/>
+     
   </div>
 </template>
 
@@ -15,3 +16,10 @@ export default {
   }
 }
 </script>
+
+<style>
+div{
+ font-family:Arial, Helvetica, sans-serif;
+}
+
+</style>

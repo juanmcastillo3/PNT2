@@ -1,6 +1,7 @@
 <template>
   <div class="Canchas">
 <ComponenteCanchas msg2="Canchas"/>
+
   </div>
 </template>
 
@@ -14,7 +15,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-</style>

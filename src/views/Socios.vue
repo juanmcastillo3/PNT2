@@ -1,6 +1,7 @@
 <template>
   <div class="Socios">
 <ComponenteSocios msg1="Socios"/>
+
   </div>
 </template>
 
